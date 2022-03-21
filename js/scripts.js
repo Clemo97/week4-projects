@@ -263,3 +263,128 @@ function ordersDisplay(orderObject) {
         });
     });
 }
+function totalPrice() {
+    var total = 0;
+    orderPrices.forEach(function (orderPrice) {
+        total = total + orderPrice;
+    });
+    clearOrderPrices();
+    grandTotalsArray.push(total);
+    return total;
+}
+function grandTotalPrice() {
+    var total = 0;
+    grandTotalsArray.forEach(function (grandTotal) {
+        total = total + grandTotal;
+    });
+    var totalAndDelivery = total + 200;
+    return totalAndDelivery;
+}
+
+function clearOrderPrices() {
+    for (var index = 0; index <= orderPrices.length + 1; index += 1) {
+        orderPrices.pop();
+    }
+}
+function priceDeterminer(orderSz, orderCr, orderTopps) {
+    var large = new Large();
+    var medium = new Medium();
+    var small = new Small();
+    var orderPrice = 0;
+    if (orderSz[0] === "Large") {
+        orderPrice = orderPrice + large[orderCr[0]];
+        orderTopps.forEach(function (orderTopp) {
+            orderPrice = orderPrice + large[orderTopp];
+        });
+        orderPrices.push(orderPrice);
+        return orderPrice;
+    } else if (orderSz[0] === "Medium") {
+        orderPrice = orderPrice + medium[orderCr[0]];
+        orderTopps.forEach(function (orderTopp) {
+            orderPrice = orderPrice + medium[orderTopp];
+        });
+        orderPrices.push(orderPrice);
+        return orderPrice;
+    } else if (orderSz[0] === "Small") {
+        orderPrice = orderPrice + small[orderCr[0]];
+        orderTopps.forEach(function (orderTopp) {
+            orderPrice = orderPrice + small[orderTopp];
+        });
+        orderPrices.push(orderPrice);
+        return orderPrice;
+    }
+}
+
+function clearOrder(orderObject) {
+    for (var index = 0; index <= orderObject.size.length + 1; index += 1) {
+        orderObject.pizzaName.pop();
+        orderObject.size.pop();
+        orderObject.crust.pop();
+        orderObject.toppings.pop();
+        orderNames.pop();
+        orderSizes.pop();
+        orderCrusts.pop();
+        orderToppings.pop();
+    }
+}
+
+function Large() {
+    this.Thin = 650;
+    this.Flatbread = 600;
+    this.Thick = 700;
+    this.WoodFired = 650;
+    this.Focaccia = 750;
+    this.Pepperoni = 70;
+    this.Coriander = 90;
+    this.Pepper = 60;
+    this.Garlic = 50;
+    this.Bacon = 110;
+    this.Mozzarella = 60;
+    this.Salami = 70;
+    this.Pineapple = 50;
+    this.Ham = 200;
+    this.Pork = 200;
+    this.Chicken = 250;
+    this.Beef = 250;
+}
+
+function Medium() {
+    this.Thin = 550;
+    this.Flatbread = 500;
+    this.Thick = 600;
+    this.WoodFired = 550;
+    this.Focaccia = 650;
+    this.Pepperoni = 60;
+    this.Coriander = 80;
+    this.Pepper = 50;
+    this.Garlic = 40;
+    this.Bacon = 90;
+    this.Mozzarella = 50;
+    this.Salami = 60;
+    this.Pineapple = 40;
+    this.Ham = 150;
+    this.Pork = 150;
+    this.Chicken = 200;
+    this.Beef = 200;
+}
+
+function Small() {
+    this.Thin = 450;
+    this.Flatbread = 400;
+    this.Thick = 500;
+    this.WoodFired = 450;
+    this.Focaccia = 550;
+    this.Pepperoni = 50;
+    this.Coriander = 70;
+    this.Pepper = 40;
+    this.Garlic = 30;
+    this.Bacon = 70;
+    this.Mozzarella = 40;
+    this.Salami = 50;
+    this.Pineapple = 30;
+    this.Ham = 100;
+    this.Pork = 100;
+    this.Chicken = 150;
+    this.Beef = 150;
+}
+
