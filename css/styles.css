@@ -44,3 +44,40 @@ body {
       margin-top: .3em;
       margin-bottom: 1em;
   }
+.jumbotron h1 {
+    font-family: hothamFont;
+    font-size: 7em;
+}
+
+.pizza-photo {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3em;
+    border: 20px white solid;
+}
+
+.pizza-photo img {
+    width: 100%;
+}
+
+.hr-black hr {
+    border-top: 2px #b4b4b4 solid;
+}
+.card button {
+    background-color: brown;
+    color: white;
+}
+
+.pizza-small img {
+    width: 25%;
+    padding-top: 7%;
+}
+
+.pizza-medium img {
+    width: 32%;
+    padding-top: 3%;
+}
+
+.pizza-large img {
+    width: 40%;
+}
