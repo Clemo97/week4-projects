@@ -24,26 +24,28 @@ body {
     color: white;
     margin-bottom: 0rem;
 }
-  .jumbotron p {
-      font-size: 1.5em;
-  }
 
-  .padding {
-      padding-bottom: 2em;
-  }
+.jumbotron p {
+    font-size: 1.5em;
+}
 
-  .welcome {
-      width: 75%;
-      margin: 0% auto;
-      padding-top: 2em;
-  }
+.padding {
+    padding-bottom: 2em;
+}
 
-  .welcome hr {
-      border-top: 4px white solid;
-      width: 95%;
-      margin-top: .3em;
-      margin-bottom: 1em;
-  }
+.welcome {
+    width: 75%;
+    margin: 0% auto;
+    padding-top: 2em;
+}
+
+.welcome hr {
+    border-top: 4px white solid;
+    width: 95%;
+    margin-top: .3em;
+    margin-bottom: 1em;
+}
+
 .jumbotron h1 {
     font-family: hothamFont;
     font-size: 7em;
@@ -63,6 +65,7 @@ body {
 .hr-black hr {
     border-top: 2px #b4b4b4 solid;
 }
+
 .card button {
     background-color: brown;
     color: white;
@@ -80,4 +83,52 @@ body {
 
 .pizza-large img {
     width: 40%;
+}
+
+#footr {
+    font-family: hothamFont;
+    font-size: xx-large;
+}
+
+footer {
+    background-color: rgb(17, 17, 63);
+    color: #d5d5d5;
+    padding-top: 1rem;
+    margin-top: 2em;
+    font-size: large;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.form-group {
+    line-height: 0%;
+}
+
+#myForm input {
+    color: black;
+}
+
+#deliveryForm input {
+    color: black;
+}
+
+.pizza-sizes {
+    margin-bottom: 1em;
+}
+
+.pizza-design-form {
+    background-color: #f4f4f4;
+    padding: 2em;
+    margin-top: 1em;
 }
