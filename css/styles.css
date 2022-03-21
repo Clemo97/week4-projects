@@ -170,3 +170,19 @@ label {
     height: 100%;
     position: relative;
 }
+ .padTop {
+     margin-top: 1em;
+ }
+
+ #orderTotals {
+     font-size: 1.5em;
+ }
+
+ .grand-total {
+     font-size: 1.8em;
+ }
+
+ .bottom-align {
+     position: absolute;
+     bottom: 0em;
+ }
