@@ -24,3 +24,23 @@ body {
     color: white;
     margin-bottom: 0rem;
 }
+  .jumbotron p {
+      font-size: 1.5em;
+  }
+
+  .padding {
+      padding-bottom: 2em;
+  }
+
+  .welcome {
+      width: 75%;
+      margin: 0% auto;
+      padding-top: 2em;
+  }
+
+  .welcome hr {
+      border-top: 4px white solid;
+      width: 95%;
+      margin-top: .3em;
+      margin-bottom: 1em;
+  }
